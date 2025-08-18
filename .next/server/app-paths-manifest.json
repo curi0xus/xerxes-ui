@@ -1,0 +1,9 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/asset-monitor/page": "app/asset-monitor/page.js",
+  "/causal-chain/page": "app/causal-chain/page.js",
+  "/historical/page": "app/historical/page.js",
+  "/page": "app/page.js",
+  "/risk-dashboard/page": "app/risk-dashboard/page.js",
+  "/timeline/page": "app/timeline/page.js"
+}
