@@ -10,6 +10,7 @@ interface CausalNodeProps {
   isHovered: boolean
   onSelect: (id: string) => void
   onHover: (id: string | null) => void
+  onLeave: (id: string | null) => void
 }
 
 export default function CausalNode({ 
@@ -17,7 +18,8 @@ export default function CausalNode({
   isSelected, 
   isHovered, 
   onSelect, 
-  onHover 
+  onHover,
+  onLeave
 }: CausalNodeProps) {
   const colors = getNodeColor(node.type)
   const scale = isSelected ? 1.1 : isHovered ? 1.05 : 1
@@ -49,7 +51,7 @@ export default function CausalNode({
       }}
       onClick={() => onSelect(node.id)}
       onMouseEnter={() => onHover(node.id)}
-      onMouseLeave={() => onHover(null)}
+      onMouseLeave={() => onLeave(null)}
     >
       {/* Node Circle */}
       <div

@@ -129,7 +129,7 @@ export default function Timeline() {
             <div className="flex-1">
               <p className="text-gray-600 text-sm font-medium mb-1">High Impact</p>
               <p className="text-2xl font-bold text-gray-900 mb-2">8</p>
-              <span className="text-xs text-gray-500">score > 80</span>
+              <span className="text-xs text-gray-500">score &gt; 80</span>
             </div>
             <div className="p-2 rounded-lg bg-white/70 text-red-600">
               <AlertTriangle className="h-6 w-6" />
